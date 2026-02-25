@@ -17,6 +17,17 @@ An end-to-end Data Science pipeline to analyze how Bitcoin Market Sentiment (Fea
 
 ---
 
+## Folder Structure 
+├── Data/                   # Original CSV files (fear_greed, historical_data)
+├── Notebook/
+│   └── analysis.ipynb      # Step-by-step analysis (optional)
+├── final_analysis.py       # Main processing script
+├── app.py                  # Streamlit Dashboard
+├── enriched_data.csv       # Final processed data
+├── requirements.txt        # Libraries list
+├── SUMMARY.md              # 1-page Write-up (Methodology & Strategy)
+└── README.md               # Setup & How to run
+
 ## 🧠 Methodology & Write-up
 
 ### 1. Data Integration & Engineering
