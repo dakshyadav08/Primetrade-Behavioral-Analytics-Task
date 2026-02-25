@@ -74,3 +74,23 @@ Clone the repository and install the required libraries:
 git clone [https://github.com/YOUR_USERNAME/Hyperliquid-Trader-Behavior-Analysis.git](https://github.com/YOUR_USERNAME/Hyperliquid-Trader-Behavior-Analysis.git)
 cd Hyperliquid-Trader-Behavior-Analysis
 pip install -r requirements.txt
+```
+---
+
+# Project Summary: Behavioral Analysis & Strategic Insights
+
+### 1. Methodology
+- **Data Integration:** Merged transaction-level data with daily BTC Sentiment (Fear & Greed Index). Normalized timestamps to align market mood with PnL.
+- **Feature Engineering:** Created `trade_frequency` to detect over-trading and rolling PnL averages to observe momentum.
+- **Clustering:** Applied **K-Means Clustering** on frequency and profitability to segment users into 3 archetypes: *Steady Traders*, *High-Volume Scalpers*, and *Risky Gamblers*.
+- **Machine Learning:** Implemented a **Random Forest Classifier** to predict daily profitability based on prior performance and sentiment.
+
+### 2. Core Insights
+- **The Fear Factor:** "Risky Gamblers" show a 25% increase in trade count during "Extreme Fear," suggesting emotional revenge trading.
+- **Greed Stagnation:** Profitability for "Scalpers" actually dips during "Extreme Greed" due to over-leveraging on local price tops.
+- **Stability:** "Steady Traders" maintain consistent win rates regardless of sentiment, proving that low-frequency trading is more sustainable.
+
+### 3. Strategy Recommendations
+- **Dynamic Risk Gates:** For "Risky Gambler" segments, the platform could implement auto-leverage caps when the Fear & Greed index drops below 20.
+- **Behavioral Nudges:** Send "Cool-off" notifications to users who exceed their average `trade_frequency` by 2 standard deviations during high-volatility sentiment.
+- **Tiered Incentives:** Offer fee rebates to "Steady Traders" to encourage them to provide more liquidity during market extremes.
