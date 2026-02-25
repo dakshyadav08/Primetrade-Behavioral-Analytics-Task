@@ -30,6 +30,8 @@ An end-to-end Data Science pipeline to analyze how Bitcoin Market Sentiment (Fea
 └── README.md               # Setup & How to run
 
 ```
+---
+
 ## 🧠 Methodology & Write-up
 
 ### 1. Data Integration & Engineering
